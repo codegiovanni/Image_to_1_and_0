@@ -18,6 +18,7 @@ d = ImageDraw.Draw(new_img)
 for i in range(new_height):
     for j in range(new_width):
         r, g, b = img[j, i]
+#         r, g, b, a = img[j, i] # use this line if you have an image with alpha value
         k = int((r + g + b) / 3)
         if k < 128:
             text = "1"
